@@ -12,9 +12,9 @@
 
 **_Deliverables for Exercise 2:_**
 
-- **E2T2_config.png** - Screenshot of AWS Config showing non-compliant rules.
-- **E2T2_inspector.png** - Screenshot of AWS Inspector showing scan results.
-- **E2T2.png_securityhub.png** - Screenshot of AWS Security Hub showing compliance standards for CIS foundations.
+- _COMPLETED->_ **E2T2_config.png** - Screenshot of AWS Config showing non-compliant rules.
+- _COMPLETED->_ **E2T2_inspector.png** - Screenshot of AWS Inspector showing scan results.
+- _COMPLETED->_ **E2T2.png_securityhub.png** - Screenshot of AWS Security Hub showing compliance standards for CIS foundations.
 - **E2T2.txt** - Provide recommendations on how to remediate the vulnerabilities.
 
 ## Exercise 3 - Attack Simulation
