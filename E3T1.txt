@@ -4,6 +4,8 @@ Describe GuardDuty findings that were detected related to the brute force attack
 
     The finding is generated through the monitoring of traffic on port 22. If ssh is configured to use a different port this finding is not generated.
 
-    The first finding of this type is of LOW severity. This is to say there is an attempt from an attacker in using a brute force method to guess the password of the user through an ssh connection
+    The first finding of this type is of LOW severity. This is to say there is an attempt from an attacker in using a brute force method to guess the password 
+    of the user through an ssh connection
 
-    The second finding is of HIGH severity. This states that there is an attempt to use a brute force method from an instance within the account. It originates from the AttackerInstance running the Hydra application. The application is operating on port 54712 trying to access port 22 on the RecipeWebServiceInstance.
+    The second finding is of HIGH severity. This states that there is an attempt to use a brute force method from an instance within the account. It originates
+    from the AttackerInstance running the Hydra application. The application is operating on port 54712 trying to access port 22 on the RecipeWebServiceInstance.

@@ -1,4 +1,5 @@
-Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify 
+at least 2 obvious poor practices as it relates to security.  Include justification.
 
 # Private subnet has internet Gateway attached:
     
@@ -7,16 +8,21 @@ Based on the architecture diagram, and the steps you have taken so far to upload
 
 # Web App security group
 
-    The security group assigned to the web application instance should only allow traffic from the internet facing load balancer. It should only allow access on port 443, not 80 and 5000. Using TLS / SSL encrypted connection ensures data transferred between the client and the server is encrypted thus preventing anyone who is packet sniffing to have access to the data.
+    The security group assigned to the web application instance should only allow traffic from the internet facing load balancer. It should only 
+    allow access on port 443, not 80 and 5000. Using TLS / SSL encrypted connection ensures data transferred between the client and the server is 
+    encrypted thus preventing anyone who is packet sniffing to have access to the data.
 
 # IAM Instance Role permissions:
 
-    The IAM role used for for instance profile role is overly permissive. It currently allows S3 actions on any buckets. The role should be restricted to only read and write permissions to the specific buckets in use for the application.
+    The IAM role used for for instance profile role is overly permissive. It currently allows S3 actions on any buckets. The role should be 
+    restricted to only read and write permissions to the specific buckets in use for the application.
 
 # S3 Bucket Encryption and Versioning:
 
-    The S3 buckets should have versioning control enabled for all objects uploaded to the bucket. This ensures that if an attacker was to gain access to delete or alter files on the bucket it is able to be restored. All data uploaded to the bucket should be encrypted by default.
+    The S3 buckets should have versioning control enabled for all objects uploaded to the bucket. This ensures that if an attacker was 
+    to gain access to delete or alter files on the bucket it is able to be restored. All data uploaded to the bucket should be encrypted by default.
 
 # S3 Bucket VPC endpoint
 
-    Because the web server instance is requesting data from the buckets all objects uploaded to the bucket should be marked as private. The bucket should not be publicly accessible. A VPC endpoint should be used to allow access from only the web server. 
+    Because the web server instance is requesting data from the buckets all objects uploaded to the bucket should be marked as private. 
+    The bucket should not be publicly accessible. A VPC endpoint should be used to allow access from only the web server. 
