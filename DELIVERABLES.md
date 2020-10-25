@@ -38,9 +38,9 @@
 - _COMPLETED->_ **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.
 - _COMPLETED->_ **E4T2_s3copy.png** - Screenshot of the failed copy attempt.
 - _COMPLETED->_ **E4T2_s3encryption.png** - screenshot of the S3 bucket policy
-- **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
-- **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
-- **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
+- _COMPLETED->_ **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
+- _COMPLETED->_ **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
+- _COMPLETED->_ **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
 - **E4T4.txt** - Answers from prompts in Exercise 4, Task 4.
 
 - _Optional_ **c3-app_solution.yml** and **c3-s3_solution.yml** - Updated cloud formation templates which reflect changes made in E4 tasks related to AWS configuration changes.
