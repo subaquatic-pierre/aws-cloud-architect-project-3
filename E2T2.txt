@@ -1,3 +1,54 @@
-Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+# Config findings
 
-Bonus - provide recommendations on how to remediate the vulnerabilities.
+## Code Build Role
+
+    The CodeBuild IAM role doesn't allow blocked actions on all KMS keys
+
+## EC2
+
+    All EC2 instances should be managed by Systems Manager. 
+
+    Remediation: Each instances which is provisioned within the account will be configured to be access by systems manager only.
+
+## EBS
+
+    All EBS mounted drives are to be encrypted by default.
+
+    Remediation: Set EBS encryption as standard configuration setting when provisioning an EC2 instance.
+
+# ALB
+
+    All HTTP requests are redirected to HTTPS
+
+    Remediation: Set up all Application Load Balancers to redirect all HTTP requests to HTTPS. Set Security group on the instances to block all traffic to port 80 allowing only traffic to port 443
+
+# KMS
+
+    Key rotation not enabled for all keys
+
+    Remediation: Set a policy for all keys to be default rotation of 90 days.
+
+# Inspector findings
+
+## SSH Configuration Settings
+
+    - Packet redirect disabled
+    - X11 forwarding disabled
+    - Log level set to INFO
+    - Root login disabled
+    - Idle timeout configured
+
+    Remediation: All SSH configuration settings should be pre-configured in a user-data script and at the AMI level. This ensures that ll SSH settings are standardized for every instance which allows SSH access.
+
+## Firewall
+
+    Firewall enabled for all ports
+
+    Remediation: Enable Uncomplicated Firewall all all instances which allow access. This ensures setting a DENY rule for all ports who do not need access to
+
+## Super user
+
+    Access to super user
+
+    Remediation: Do not allow access tot he super user account on any instances which allow login access.
+    
