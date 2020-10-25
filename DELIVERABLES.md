@@ -37,7 +37,7 @@
 - _COMPLETED->_ **E4T2_sshattempt.png** - Screenshot of your SSH attempt.
 - _COMPLETED->_ **E4T2_s3iampolicy.png** - Screenshot of the updated IAM policy.
 - _COMPLETED->_ **E4T2_s3copy.png** - Screenshot of the failed copy attempt.
-- **E4T2_s3encryption.png** - screenshot of the S3 bucket policy
+- _COMPLETED->_ **E4T2_s3encryption.png** - screenshot of the S3 bucket policy
 - **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
 - **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
 - **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
