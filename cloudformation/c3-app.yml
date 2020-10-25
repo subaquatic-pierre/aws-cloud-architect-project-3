@@ -32,8 +32,8 @@ Resources:
             Version: 2012-10-17
             Statement:
               - Effect: Allow
-                Action: 's3:*'
-                Resource: '*'
+                Action: ["s3:GetObject","s3:GetObjectVersion"]
+                Resource: !Join [ "", [ "arn:aws:s3:::", !ImportValue 'BucketNameRecipesFree' ] ]
 
   InstanceProfileRole:
     Type: AWS::IAM::InstanceProfile
