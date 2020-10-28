@@ -51,7 +51,7 @@
 **_Deliverables for Exercise 5:_**
 
 - _COMPLETED->_ **DevSecOpsPipline.[ppt or png]** - Your updated pipeline.
-- **E5T2.txt** - Answer from prompts in Exercise 5, Task 2.
+- _COMPLETED->_ **E5T2.txt** - Answer from prompts in Exercise 5, Task 2.
 
 - _Optional_ **E5T3.png** - Screenshot of tool that has identified bad practices.
 - _Optional_ **E5T3.txt** - Answers from prompts in Exercise 5, Task 3.

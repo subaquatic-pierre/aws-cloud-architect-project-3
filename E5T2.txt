@@ -1,0 +1,15 @@
+## Security HUB
+
+    AWS security hub will be configured to monitor all security aspects within the AWS account configuration. The tool will identify such vulnerabilities as no Key rotation or incorrect IAM policy use. The tool will also point out that MFA is not setup or that a user may be using the root user to perform tasks.
+
+## Handolint
+
+    This tool is used for Docker file linting. It is setup using a buildspec file. The configurations are added to the buildspec which run the lining process on the Dockerfile which is to be used to build the base image for the application. The linting stage ensures that Docker security best practices are applied before pushing the Docker image to production.
+
+## Traffulehog
+
+    Adding this tool to the pipeline will check for secret exposure in the image. The tool is used to scan the repo and identify any secrets which may be exposed. If a vulnerability is found in the repo, eg. username and passwords are stored in plain text format, it will raise an alert in the pipeline and the build will not pass.
+
+## Anchore
+
+    The Anchore tool is used to scan for system vulnerabilities during runtime. The tool instantiates a Fargate container with the docker file. The system is then scanned for security issues as if the system was running in a production environment. The tools will be able to check for SSH flaws or any networking issues. 
