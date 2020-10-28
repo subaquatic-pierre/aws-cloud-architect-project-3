@@ -1,5 +1,7 @@
 # AWS Cloud Architect - Project 3
 
+Build a DevSecOps pipeline
+
 ## Enable AWS Security Services
 
 1. Enable AWS Config
