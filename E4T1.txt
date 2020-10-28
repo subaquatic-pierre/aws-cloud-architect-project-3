@@ -1,0 +1,21 @@
+# Prevent SSH brute force attacks
+
+## Remove Allow password authentication
+
+    Log into the machine and alter the /etc/ssh/sshd_config settings. Change
+    the PasswordAuthentication setting to no. THis will prevent any SSH attempts
+    in using the username and password to log into the system.
+
+## Change SSH port
+
+    The access port for SSH can be changed to a different port. This creates a 
+    layer of obfuscation removing the ability of an attacker to easily guess
+    the SSH port to try a brute force attack.
+
+## Limit SSH users
+
+    Change the SSH configuration file to only allow certain users to user SSH
+    to log into the system
+
+
+

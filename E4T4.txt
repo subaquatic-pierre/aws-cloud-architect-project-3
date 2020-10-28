@@ -1,0 +1,20 @@
+# Reduce attack surface
+
+1. Additional changes:
+
+- Set routing tables and Security groups to only allow connections from trusted IP addresses.
+- Move the public facing web server to a private network. Only allow internet traffic to be forwarded from the load balancer in the public subnet to forward traffic to the private subnet.
+- Enable a firewall on the host machine. Ensure DENY setting for all port accept port 443 which is secure TSL traffic from the Load Balancer.
+- Configure a NAT gateway for the web server to perform system patches over the internet but not allow public internet traffic to the machine.
+
+2. S3 Bucket VPC
+
+Because the IAM role has read / write access to all buckets, configuring a VPC endpoint to allow traffic to only the VPC will not protect the bucket from malicious activities.
+
+3. Encryption
+
+Applying default server encryption to all object uploaded to a bucket will not encrypt data which is already on the bucket. The data will need to be re-uploaded for it to be encrypted.
+
+4. Creating standard security best practice cloud formation templates will enure the environment is protected from the beginning. It will ensure no one is able to access sensitive information and all data on the S3 bucket is encrypted from the start.
+
+Having secure by default templates also allows for the automatic scanning for vulnerabilities before pushing the environment to production

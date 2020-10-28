@@ -31,7 +31,7 @@
 
 **_Deliverables for Exercise 4:_**
 
-- **E4T1.txt** - Answer to the prompts in Exercise 4, Task 1.
+- _COMPLETED->_ **E4T1.txt** - Answer to the prompts in Exercise 4, Task 1.
 - _COMPLETED->_ **E4T2_sshbruteforce.png** - Screenshot of terminal window showing the brute force attack and the remediation.
 - _COMPLETED->_ **E4T2_networksg.png** - Screenshot of the security group change.
 - _COMPLETED->_ **E4T2_sshattempt.png** - Screenshot of your SSH attempt.
@@ -41,7 +41,7 @@
 - _COMPLETED->_ **E4T3_securityhub.png** - Screenshot of Security Hub after reevaluating the number of findings.
 - _COMPLETED->_ **E4T3_config.png** - Screenshot of Config after reevaluating the number of findings.
 - _COMPLETED->_ **E4T3_inspector.png** - Screenshot of Inspector after reevaluating the number of findings.
-- **E4T4.txt** - Answers from prompts in Exercise 4, Task 4.
+- _COMPLETED->_ **E4T4.txt** - Answers from prompts in Exercise 4, Task 4.
 
 - _Optional_ **c3-app_solution.yml** and **c3-s3_solution.yml** - Updated cloud formation templates which reflect changes made in E4 tasks related to AWS configuration changes.
 - _Optional_ **E4T5.txt** - Additional hardening suggestions from Exercise 4, Task 5.
